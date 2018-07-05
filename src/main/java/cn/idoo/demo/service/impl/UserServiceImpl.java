@@ -51,10 +51,10 @@ public class UserServiceImpl implements UserService {
         return userModelMapper.deleteByPrimaryKey(id);
     }
 
-//    @Override
-//    public int update(UserModel userModel) {
-//        return userModelMapper.updateByPrimaryKeySelective(userModel);
-//    }
+    @Override
+    public int update(UserModel userModel) {
+        return userModelMapper.updateByPrimaryKeySelective(userModel);
+    }
 
 //    @Override
 //    public int deleteBatch(List<String> ids) {

@@ -11,7 +11,6 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
 
 @Controller
 @RequestMapping("/user")
@@ -44,13 +43,6 @@ public class UserController {
         return new ResponseResult<Integer>().success(ErrorCode.SUCCESS,"删除成功",result);
     }
 
-    /*@PostMapping("/deleteBatch")
-    @ApiOperation(value = "根据用户id批量删除用户数据", notes = "删除成功返回0")
-    @ResponseBody
-    public ResponseResult<Integer> deleteBatch(@RequestBody List<String> ids){
-        int result=userService.deleteBatch(ids);
-        return new ResponseResult<Integer>().success(ErrorCode.SUCCESS,"成功删除【"+"】条数据",result);
-    }
 
     @PostMapping("/update")
     @ApiOperation(value = "根据用户id更新用户数据", notes = "更新成功返回0")
@@ -58,5 +50,5 @@ public class UserController {
     public ResponseResult<Integer> update(@RequestBody  UserModel userModel){
         int result=userService.update(userModel);
         return new ResponseResult<Integer>().success(ErrorCode.SUCCESS,"更新成功6666",result);
-    }*/
+    }
 }

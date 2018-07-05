@@ -35,12 +35,5 @@ public interface UserService {
      * @param userModel 用户数据
      * @return 数据库受影响的记录数目
      */
-//    int update(UserModel userModel);
-
-    /**
-     * 根据用户id批量删除用户数据
-     * @param ids 用户id集合
-     * @return 删除成功的用户数目
-     */
-//    int deleteBatch(List<String> ids);
+    int update(UserModel userModel);
 }
